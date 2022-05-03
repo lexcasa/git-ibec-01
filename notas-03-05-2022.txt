@@ -108,3 +108,12 @@ GIT
         -> merge de develop a master
         -> pull request
 
+
+    EJERCICIO RAPDIO #1: 
+        -> Crear cuenta en Github
+        -> Crear un repositorio publico
+        -> Crear un repositorio local
+        -> Crear un archivo
+        -> Subir al remoto
+        -> Crear una rama develop
+        -> Modificar archivo de rama develop
