@@ -1,0 +1,94 @@
+GIT
+    -> Programa que maneja el versionado de codigo
+    -> Versionado de codigo: Linea de tiempo de lo que se hace en un proyecto de codigo
+
+    1. Creo un doc word
+    2. Le agrego el titulo
+
+    ... 
+
+    123. Copio el contenido del word y creo un archivo nuevo
+        -> Tiutlo: Trabajo Final
+    
+
+    234. -> titulo: Trabajo Final 123
+
+
+    SVN: 
+        -> 1.0.0 (size: 10kb)
+        -> 1.0.1 (size: 11kb)
+        ...
+        ...
+        -> 3.1.2 (size: 20kb)
+
+GIT
+    -> Linus Torvals    
+    -> Branchs = Environments
+
+    3 instancias minimas
+        -> Local
+        -> Pruebas
+        -> Cliente final
+
+    -> 
+        Branchs: 
+            -> develop (dev)    ---> Env: Local
+            -> qa (test)        ---> Env: Pruebas
+            -> master (main)    ---> Env: Produccion
+
+    Branch : Linea de tiempo de desarrollo de nuestro sistema
+
+        -> Nombre: develop
+        -> Serie de puntos que marcan la historia de la branch: Commit
+
+    Dividir: 
+
+        Local   : mi maquina
+        ----
+        Remoto  : servidor donde almacena el codigo
+
+    
+    EJEMPLO: Software
+
+        -> Equipo: 2 personas
+        -> Crud: Clientes (listado, alta, baja, modificacion)
+        -> Tarea: 
+            -> Persona A: Crear el listado
+            -> Persona B: Crea la alta
+            -> Hay una funcion que depende del listado y la alta
+        
+        Commit: 
+            -> nombre del usuario
+            -> Fecha + hora
+            -> Que archivos toco
+            -> Hash (que identifica que ese commit es unico en la linea de tiempo)
+
+    Se puede ir a casa: 
+        -> Commit
+        -> Push
+        -> Si esta todo en el remoto -> :)
+
+    PASOS REPO NUEVO: 
+
+    LOCAL: 
+        
+        1. Creo una carpeta
+        2. git init (crea por defecto la rama master)
+        3. Si tenemos un repositorio creado en github
+            -> Agregamos el remote
+            -> Ejemplo: git remote add origin https://github.com/lexcasa/git-ibec-01.git
+        4. Verifico el origen
+            -> cmd: git remote -v
+            -> Me deberia aparecer los dos casos: fetch / push con su respectiva url
+
+    SUBIR EL ARCHIVO
+
+        5. Verificamos si hay modificaciones o creacion de archivo
+            -> git status
+        6. Preparar para subir el archivo
+            -> git add archivo.ext
+            -> git commit -m "Agrego un archivo"
+            -> git push
+                -> Si es la primera vez tengo que publicar la rama al repo remoto
+                -> git push -u origin master
+
