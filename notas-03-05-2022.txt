@@ -92,3 +92,14 @@ GIT
                 -> Si es la primera vez tengo que publicar la rama al repo remoto
                 -> git push -u origin master
 
+    BAJAR ARCHIVO
+
+        7. git pull
+            -> Si estoy parado en la rama master me va a traer la informacion solo de la rama master
+            -> Caso quiera verificar otras ramas: git fetch && git pull
+
+    CREAR RAMA LOCAL
+
+        8. git checkout -b <nombre_rama> (crea la rama y me mueve a la rama nueva)
+            -> git branch <nombre_rama> (solo crea la rama)
+
