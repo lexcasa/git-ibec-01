@@ -103,3 +103,8 @@ GIT
         8. git checkout -b <nombre_rama> (crea la rama y me mueve a la rama nueva)
             -> git branch <nombre_rama> (solo crea la rama)
 
+
+    ACTUALIZAR LOS CAMBIOS DE UNA RAMA A OTRA
+        -> merge de develop a master
+        -> pull request
+
